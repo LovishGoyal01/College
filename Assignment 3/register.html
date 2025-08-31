@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <h2>Participant Registration</h2>
+    <form action="submit_registration.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" required>
+      
+      <label for="event">Choose Event:</label>
+      <select id="event" name="event" required>
+        <option value="quiz">Quiz Bowl</option>
+        <option value="dance">Dance Competition</option>
+        <option value="photography">Photography Contest</option>
+        <option value="painting">Painting</option>
+        <option value="coding">Coding Hackathon</option>
+        <option value="singing">Singing Competition</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ===== Header ===== */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  text-align: center;
+  background-color: #2c3e50;
+  padding: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+/* ===== Sections ===== */
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 5px;
+}
+
+/* ===== About Me ===== */
+#aboutme img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ===== Education Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f39c12;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+}
+
+/* ===== Links ===== */
+a {
+  color: #2c3e50;
+}
+
+a:hover {
+  color: #f39c12;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 30px;
+  font-size: 14px;
+}
