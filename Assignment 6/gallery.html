@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Travel Gallery</h1></header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="booking.html">Booking</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="about.html">About Us</a>
+  </nav>
+
+  <div class="gallery">
+    <img src="./photos/bali.jpg" data-large="./photos/bali.jpg" alt="Bali Beach">
+    <img src="./photos/eiffel-tower-vintage.webp" data-large="./photos/eiffel-tower-vintage.webp" alt="Eiffel Tower, Paris">
+    <img src="./photos/tokyo.jpg" data-large="./photos/tokyo.jpg" alt="Tokyo Skyline">
+    <img src="./photos/skyline-nyc.webp" data-large="./photos/skyline-nyc.webp" alt="New York City">
+    <img src="./photos/mountain.webp" data-large="./photos/mountain.webp" alt="Mountain Landscape">
+    <img src="./photos/indonesia.webp" data-large="./photos/indonesia.webp" alt="Indonesia Islands">
+  </div>
+
+  <div id="modal" class="modal">
+    <span id="closeModal">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <p id="modalCaption"></p>
+  </div>
+
+  <footer>© 2025 DreamScape Travels</footer>
+  <script src="script.js"></script>
+</body>
+</html>

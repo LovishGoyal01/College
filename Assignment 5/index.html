@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Assignment 7</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>JavaScript Assignment 7</h1>
+
+  <section id="q1">
+    <h2>i. Arithmetic Operations</h2>
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+    <button onclick="calculate()">Calculate</button>
+    <p id="result1"></p>
+  </section>
+
+  <section id="q2">
+    <h2>ii. Array Operations</h2>
+    <button onclick="arrayOperations()">Run Array Operations</button>
+    <p id="result2"></p>
+  </section>
+
+  <section id="q3">
+    <h2>iii. Form Validation</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Enter your name" /><br />
+      <input type="email" id="email" placeholder="Enter your email" /><br />
+      <input type="number" id="age" placeholder="Enter your age" /><br />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <section id="q4">
+    <h2>iv. Student Object</h2>
+    <button onclick="studentInfo()">Show Student Info</button>
+    <p id="result4"></p>
+  </section>
+
+  <section id="q5">
+    <h2>v. Array with map(), filter(), reduce()</h2>
+    <button onclick="processArray()">Process Array</button>
+    <p id="result5"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
