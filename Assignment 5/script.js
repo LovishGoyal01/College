@@ -24,14 +24,22 @@ function calculate() {
 
 // ---------- (ii) Array Operations ----------
 function arrayOperations() {
-  const numbers = [12, 5, 23, 7, 18];
+  const input = document.getElementById("arrayInput2").value.trim();
+
+  if (!input) {
+    alert("Please enter some numbers!");
+    return;
+  }
+
+  const numbers = input.split(",").map(n => parseFloat(n.trim()));
+
   const largest = Math.max(...numbers);
   const smallest = Math.min(...numbers);
   const ascending = [...numbers].sort((a, b) => a - b);
   const descending = [...numbers].sort((a, b) => b - a);
 
   document.getElementById("result2").innerHTML = `
-    Array: ${numbers}<br>
+    Original Array: ${numbers}<br>
     Largest: ${largest}<br>
     Smallest: ${smallest}<br>
     Ascending: ${ascending}<br>
@@ -62,30 +70,45 @@ function validateForm() {
   }
 
   message.textContent = "Form submitted successfully!";
-  return false; // prevent page reload
+  return false; // prevent reload
 }
 
 // ---------- (iv) Student Object ----------
 function studentInfo() {
-  const student = {
-    name: "Rahul Sharma",
-    age: 20,
-    grade: "A"
-  };
+  const name = document.getElementById("studentName").value.trim();
+  const age = document.getElementById("studentAge").value.trim();
+  const grade = document.getElementById("studentGrade").value.trim();
 
-  student.class = "12th";
-  student.grade = "A+";
+  if (!name || !age || !grade) {
+    document.getElementById("result4").innerHTML = "Please fill all fields!";
+    return;
+  }
+
+  const student = {
+    name,
+    age,
+    grade,
+    class: "12th"
+  };
 
   let output = "<b>Student Information:</b><br>";
   for (let key in student) {
     output += `${key}: ${student[key]}<br>`;
   }
+
   document.getElementById("result4").innerHTML = output;
 }
 
 // ---------- (v) map(), filter(), reduce() ----------
 function processArray() {
-  const arr = [1, 2, 3, 4, 5, 6];
+  const input = document.getElementById("arrayInput5").value.trim();
+
+  if (!input) {
+    alert("Please enter numbers first!");
+    return;
+  }
+
+  const arr = input.split(",").map(n => parseInt(n.trim()));
 
   const even = arr.filter(num => num % 2 === 0);
   const doubled = even.map(num => num * 2);
@@ -94,7 +117,7 @@ function processArray() {
   document.getElementById("result5").innerHTML = `
     Original Array: ${arr}<br>
     Even Numbers: ${even}<br>
-    Doubled: ${doubled}<br>
+    Doubled (Even × 2): ${doubled}<br>
     Sum: ${sum}
   `;
 }

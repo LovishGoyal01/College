@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaScript Assignment 7</title>
+  <title>JavaScript Assignment 5</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>JavaScript Assignment 5</h1>
 
+  <!-- (i) Arithmetic Operations -->
   <section id="q1">
     <h2>i. Arithmetic Operations</h2>
     <input type="number" id="num1" placeholder="Enter first number" />
@@ -17,12 +18,15 @@
     <p id="result1"></p>
   </section>
 
+  <!-- (ii) Array Operations -->
   <section id="q2">
     <h2>ii. Array Operations</h2>
+    <input type="text" id="arrayInput2"  placeholder="Enter numbers (e.g.10,5,30)" />
     <button onclick="arrayOperations()">Run Array Operations</button>
     <p id="result2"></p>
   </section>
 
+  <!-- (iii) Form Validation -->
   <section id="q3">
     <h2>iii. Form Validation</h2>
     <form onsubmit="return validateForm()">
@@ -34,14 +38,24 @@
     <p id="message"></p>
   </section>
 
+  <!-- (iv) Student Object -->
   <section id="q4">
     <h2>iv. Student Object</h2>
+
+    <input type="text" id="studentName" placeholder="Enter student name" />
+    <input type="number" id="studentAge" placeholder="Enter student age" />
+    <input type="text" id="studentGrade" placeholder="Enter student grade" />
+
     <button onclick="studentInfo()">Show Student Info</button>
     <p id="result4"></p>
   </section>
 
+  <!-- (v) Array map(), filter(), reduce() -->
   <section id="q5">
     <h2>v. Array with map(), filter(), reduce()</h2>
+
+    <input type="text" id="arrayInput5" placeholder="Enter numbers (e.g. 1,2,3,4)" />
+
     <button onclick="processArray()">Process Array</button>
     <p id="result5"></p>
   </section>
